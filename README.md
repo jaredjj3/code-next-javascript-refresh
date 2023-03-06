@@ -1,6 +1,6 @@
 # code-next-javascript-refresh
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/web-platform-qhwrl1)
+[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/code-next-javascript-refresh)
 
 ## Variables
 
