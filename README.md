@@ -46,3 +46,14 @@ Open `variables.js` and practice using variables.
 
 ## Primitives
 
+The primitive types are: `String`, `Boolean`, `null`, `undefined`, `Number`, `Symbol`, and `BigInt`.
+
+```js
+const arrayOfCharacters = 'hello world!'; // String
+const trueOrFalse = true; // Boolean
+const explicitAbsenceOfAValue = null; // null
+const variableDeclaredButNotAssignedYet = undefined; // undefined
+const countThings = 5; // Number
+const symbol = Symbol('hello'); // Symbol
+const largeNumber = BigInt(9007199254740991) // BigInt
+```
