@@ -11,7 +11,7 @@ let foo = 'foo';
 const bar = 'bar';
 ```
 
-Use `let` if you will _reassign_ a variable. 
+Use `let` if you will _reassign_ a variable.
 
 ```js
 // GOOD: used let when variable reassigned
@@ -42,7 +42,7 @@ foo = 'foo';
 
 ### YOUR TURN
 
-Open `variables.js` and practice using variables.
+Open `variables.js` and practice.
 
 ## Primitives
 
@@ -60,7 +60,7 @@ const largeNumber = BigInt(9007199254740991) // BigInt
 
 ### YOUR TURN
 
-Open `primitives.js` and practice using primitives.
+Open `primitives.js` and practice.
 
 ## Objects
 
@@ -119,4 +119,83 @@ console.log(typeof arr) // object
 
 ### YOUR TURN
 
-Open `objects.js` and practice using objects.
+Open `objects.js` and practice.
+
+## Functions
+
+Functions are callable _objects_ that store procedures. In this course, prefer to use the ES6 arrow syntax with an explicit return.
+
+```js
+const double = (x) => {
+  return 2 * x;
+};
+console.log(double(4)); // 8
+```
+
+However, you will see functions declared in other ways.
+
+```js
+// OK: ES6 arrow syntax with implicit return (no curly braces or return statement)
+const getFavLib = () => 'react';
+console.log(getFavLib()); // react
+
+// OK: ES5 classic syntax
+function greet(name) {
+  console.log(`Hey, ${name}.`);
+}
+greet('Jared') // Hey, Jared.
+
+// BAD: ES6 arrow syntax incorrect implicit return with curly braces
+const getFavLang = () => {
+  'TypeScript'; // need an explicit return here, or remove curly braces
+};
+console.log(getFavLang()) // undefined
+```
+
+Since functions are objects, they can be passed as arguments to other functions. This is useful for composing behavior, instead of having one giant function doing everything.
+
+```js
+const getLie = () => {
+  return 'this is boring';
+}
+
+const getTruth = () => {
+  return 'this is cool';
+}
+
+const scream = (getMessage) => {
+  console.log(getMessage().toUpperCase());
+};
+
+// IMPORTANT: I didn't invoke getLie and getTruth!!!
+scream(getLie); // THIS IS BORING
+scream(getTruth); // THIS IS COOL
+
+// If you invoke a function and pass it to something expecting a function, you will get an error, because it is whatever the function evaluates to!
+scream(getLie()); // Uncaught TypeError: getMessage is not a function
+```
+
+Functions can return functions.
+
+```js
+const sum = (a) => (b) => a + b;
+const addOne = sum(1);
+const addFive = sum(5);
+
+console.log(addOne(1)); // 2
+console.log(addFive(1)); // 6
+```
+
+Functions can be anonymous.
+
+```js
+const objects = [
+  { foo: 'foo' },
+  { foo: 'bar' },
+  { baz: 'baz' },
+  { foo: 'bar', baz: 'baz' },
+];
+// objects.find takes an anonymous function
+const fooBarObject = objects.find((obj) => obj.foo === 'bar');
+console.log(fooBarObject); // { foo: 'bar' }
+```
