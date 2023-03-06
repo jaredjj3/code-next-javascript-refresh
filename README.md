@@ -57,3 +57,7 @@ const countThings = 5; // Number
 const symbol = Symbol('hello'); // Symbol
 const largeNumber = BigInt(9007199254740991) // BigInt
 ```
+
+### YOUR TURN
+
+Open `variables.js` and practice using primitives.
