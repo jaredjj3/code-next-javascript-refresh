@@ -235,3 +235,8 @@ incrementButton.addEventListener('click', () => {
   console.log('increment button clicked');
 });
 ```
+
+### Reflection
+
+- What was difficult about creating a counter component in plain JavaScript?
+- What are the things we were responsible of keeping track of?
