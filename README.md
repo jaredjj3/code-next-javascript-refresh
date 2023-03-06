@@ -1,4 +1,4 @@
-# code-next-javascript-refresh
+# code-next-js-refresh
 
 [Edit on StackBlitz ⚡️](https://stackblitz.com/edit/code-next-js-refresh)
 
