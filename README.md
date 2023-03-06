@@ -60,4 +60,63 @@ const largeNumber = BigInt(9007199254740991) // BigInt
 
 ### YOUR TURN
 
-Open `variables.js` and practice using primitives.
+Open `primitives.js` and practice using primitives.
+
+## Objects
+
+Objects map keys to values.
+
+```js
+const o = {
+  hello: 'world',
+  lol: 'lol'
+};
+
+console.log(o.hello) // world
+console.log(o['hello']) // world
+console.log(o.goodbye) // undefined
+```
+
+Values can be objects.
+
+```js
+const o = {
+  whats: {
+    my: {
+      secret: '👌👖',
+    }
+  }
+};
+
+console.log(o.whats.my.secret); // 👌👖
+```
+
+Objects are mutable.
+
+```js
+const o = {
+  foo: 'foo1',
+};
+
+console.log(o); // { foo: 'foo1' }
+
+o.foo = 'foo2';
+o.bar = 'bar1';
+
+console.log(o); // { foo: 'foo2', bar: 'bar1' }
+```
+
+Arrays are objects whose values are keyed by their index.
+
+```js
+const arr = [1, 'two', { three: 'three' }];
+
+console.log(arr[0]); // 1
+console.log(arr[1]); // two
+console.log(arr[2]); // { three: 'three' }
+console.log(typeof arr) // object
+```
+
+### YOUR TURN
+
+Open `objects.js` and practice using objects.
