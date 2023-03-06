@@ -42,3 +42,7 @@ foo = 'foo';
 
 ### YOUR TURN
 
+Open `variables.js` and practice using variables.
+
+## Primitives
+
