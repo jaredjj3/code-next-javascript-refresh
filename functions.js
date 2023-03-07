@@ -1,7 +1,7 @@
 import { render } from './util';
 
-// What does the translate function do?
-// TODO: Update the translate function to support more acronyms.
+// TODO: What does the translate function do?
+// Update the translate function to support more acronyms.
 render('functions1', () => {
   const translate = (acronym) => {
     if (acronym === 'lol') {

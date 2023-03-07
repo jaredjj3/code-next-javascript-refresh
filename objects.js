@@ -1,6 +1,6 @@
 import { render } from './util';
 
-// What is the value of foo.bar and foo.baz?
+// TODO: What is the value of foo.bar and foo.baz?
 render('objects1', () => {
   const foo = {
     bar: 42,

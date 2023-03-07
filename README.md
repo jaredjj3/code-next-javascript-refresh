@@ -2,6 +2,12 @@
 
 [Edit on StackBlitz ⚡️](https://stackblitz.com/edit/code-next-js-refresh)
 
+In this lesson, engineers will
+
+- learn basics about JavaScript
+- recognize different function declaration styles
+- understand object mutability
+
 ## Variables
 
 Variables store values. They are declared with `let` or `const`.
