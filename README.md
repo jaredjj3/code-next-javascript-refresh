@@ -10,7 +10,7 @@ In this lesson, engineers will
 - recognize different function declaration styles
 - understand object mutability
 
-## Variables 
+## Variables
 
 Variables store values. They are declared with `let` or `const`.
 
@@ -63,7 +63,7 @@ const explicitAbsenceOfAValue = null; // null
 const variableDeclaredButNotAssignedYet = undefined; // undefined
 const countThings = 5; // Number
 const symbol = Symbol('hello'); // Symbol
-const largeNumber = BigInt(9007199254740991) // BigInt
+const largeNumber = BigInt(9007199254740991); // BigInt
 ```
 
 ### YOUR TURN
