@@ -10,7 +10,7 @@ In this lesson, engineers will
 - recognize different function declaration styles
 - understand object mutability
 
-## Variables
+## Variables 
 
 Variables store values. They are declared with `let` or `const`.
 
