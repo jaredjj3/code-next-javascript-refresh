@@ -8,7 +8,7 @@ In this lesson, engineers will
 
 - learn basics about JavaScript
 - recognize different function declaration styles
-- understand object mutability
+- understand object mutability 
 
 ## Variables
 
