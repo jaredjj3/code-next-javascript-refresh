@@ -160,6 +160,20 @@ const getFavLang = () => {
 console.log(getFavLang()) // undefined
 ```
 
+Functions can return objects.
+
+```js
+// OK: Explicit return
+const foo = () => {
+  return { hello: 'world' };
+};
+
+// OK: Implicit returns need to use an extra set of parentheses.
+const bar = () => ({
+  hello: 'world',
+});
+```
+
 Since functions are objects, they can be passed as arguments to other functions. This is useful for composing behavior, instead of having one giant function doing everything.
 
 ```js
